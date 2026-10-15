@@ -976,13 +976,6 @@ Content-Type: text/plain;charset=UTF-8
         </div>
         <p class="code-note">Use the route, full action ID, and argument encoding from the app's own request. IDs are specific to the app and build; the recorded examples are not universal values.</p>
 
-        <h3 class="step">Actions worth tracing in these cases</h3>
-        <ul>
-          <li><strong>Account and credential writes:</strong> <code>getResults</code>, plus the related import, export, sync, and email operations in the first app.</li>
-          <li><strong>Content and upload operations:</strong> the three bulk-read actions, <code>saveMedia</code>, <code>getPresignedUrl</code>, <code>getMediaLibrary</code>, <code>getVenueFacilities</code>, and <code>getAppSettings</code>.</li>
-          <li><strong>User and partner lookups:</strong> <code>getUserName</code> and <code>isRegistered</code>.</li>
-        </ul>
-
       </section>
 
     </main>
