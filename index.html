@@ -458,10 +458,6 @@
         <p class="deck">Three companies. The same missing permission check. How Next.js Server Actions gave me <strong>admin access, private records, and unauthorized file uploads</strong> without signing in.</p>
         <div class="byline">
           <a href="https://x.com/skydesperados" target="_blank" rel="noopener noreferrer me">@skydesperados</a>
-          <span class="separator" aria-hidden="true"></span>
-          <span id="read-time">A technical walkthrough</span>
-          <span class="separator" aria-hidden="true"></span>
-          <span>Targets masked</span>
         </div>
       </div>
       <aside class="hero-card" aria-label="The missing trust boundary in these three cases">
@@ -1051,13 +1047,6 @@ Content-Type: text/plain;charset=UTF-8
       })
       systemTheme.addEventListener('change', updateThemeButton)
       updateThemeButton()
-
-      const article = document.getElementById('article')
-      const readingCopy = article.cloneNode(true)
-      readingCopy.querySelectorAll('pre, table, .sr-only, summary').forEach(el => el.remove())
-      const words = (readingCopy.textContent.match(/\S+/g) || []).length
-      document.getElementById('read-time').textContent =
-        Math.max(1, Math.ceil(words / 210)) + ' min read'
 
       const menu = document.getElementById('contents-menu')
       const compactNavigation = window.matchMedia('(max-width: 800px)')
