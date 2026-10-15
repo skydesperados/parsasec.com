@@ -475,7 +475,7 @@
       <details id="contents-menu" open>
         <summary>In this writeup</summary>
         <nav aria-label="Table of contents">
-          <a href="#overview"><span>00</span> The short version</a>
+          <a href="#overview"><span>00</span> Summary</a>
           <a href="#how-it-works"><span>01</span> How actions work</a>
           <a href="#finding-actions"><span>02</span> Finding the bug</a>
           <a href="#case-01"><span>03</span> Making an admin</a>
@@ -490,7 +490,7 @@
     <main id="article" tabindex="-1" aria-labelledby="writeup-title">
 
       <section class="intro" id="overview" aria-labelledby="overview-title">
-        <h2 class="intro-label" id="overview-title">The short version</h2>
+        <h2 class="intro-label" id="overview-title">Summary</h2>
         <p>I found the same access-control mistake at three companies: a Server Action performed a sensitive operation without checking who was calling.</p>
         <p>In one app, I created a user and gave it an admin API key. In another, I read and changed content, then obtained an S3 upload URL. In the third, I retrieved user profiles and private partner details. Together, these reports earned over $15,000.</p>
         <p>This walkthrough follows the requests and the impact. Company names and hosts are masked; the action IDs are kept as recorded.</p>
