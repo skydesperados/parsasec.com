@@ -885,10 +885,6 @@ Content-Type: text/html
 Content-Length: 0</code></pre>
         </div>
         <p>A presigned URL grants limited access to a particular S3 operation. The <code>AKIA...</code> access-key ID in the URL is not an AWS secret key. The problem here was that an anonymous caller could obtain upload permission. AWS explains the mechanism in its <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html" target="_blank" rel="noopener noreferrer">presigned URL guide</a>.</p>
-        <div class="callout warm">
-          <p><strong>What this request proves:</strong> unauthorized S3 object creation. The recorded PUT has an empty body (<code>Content-Length: 0</code>).</p>
-          <p>Stored XSS would need separate evidence that an uploaded payload executes in a relevant, trusted origin. A filename or <code>text/html</code> header alone does not demonstrate that.</p>
-        </div>
       </section>
 
       <section class="case" id="case-03" aria-labelledby="case-03-title">
