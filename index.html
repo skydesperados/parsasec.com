@@ -91,7 +91,7 @@
     .progress { position: fixed; inset: 0 0 auto; height: 3px; z-index: 50; pointer-events: none; }
     .progress i { display: block; height: 100%; width: 0; background: var(--accent); }
     .wrap { width: min(1160px, calc(100% - 64px)); margin-inline: auto; }
-    .masthead { display: flex; justify-content: space-between; align-items: center; gap: 20px; min-height: 92px; border-bottom: 1px solid var(--border); }
+    .masthead { display: flex; justify-content: flex-end; align-items: center; gap: 20px; min-height: 92px; border-bottom: 1px solid var(--border); }
     .brand { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; line-height: 1.25; }
     .brand-mark { width: 35px; height: 35px; display: grid; place-items: center; color: var(--brand-ink); background: var(--accent); font: italic 25px/1 var(--serif); border-radius: 50%; padding-bottom: 4px; }
     .brand-name { font-size: 14px; font-weight: 650; letter-spacing: -.025em; }
@@ -434,10 +434,6 @@
   <a class="skip-link" href="#article">Skip to the writeup</a>
   <div class="progress" aria-hidden="true"><i id="pbar"></i></div>
   <div class="masthead wrap">
-    <a class="brand" href="https://x.com/skydesperados" target="_blank" rel="noopener noreferrer me">
-      <span class="brand-mark" aria-hidden="true">s.</span>
-      <span class="brand-name">skydesperados<span class="brand-note">Security field notes</span></span>
-    </a>
     <div class="header-tools">
       <button class="theme-toggle" id="theme-toggle" type="button" hidden aria-label="Switch color theme">
         <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.8A9 9 0 0 1 11.2 3 9 9 0 1 0 21 12.8Z"/></svg>
@@ -452,7 +448,7 @@
         <h1 class="eyebrow" id="writeup-title">Next.js Server Actions: Broken access control</h1>
         <p class="deck">Three companies. The same missing permission check. How Next.js Server Actions gave me <strong>admin access, private records, and unauthorized file uploads</strong> without signing in.</p>
         <div class="byline">
-          <a href="https://x.com/skydesperados" target="_blank" rel="noopener noreferrer me">@skydesperados</a>
+          <a class="profile-link" href="https://x.com/skydesperados" target="_blank" rel="noopener noreferrer me">X</a>
           <a class="profile-link" href="https://github.com/skydesperados" target="_blank" rel="noopener noreferrer me">GitHub</a>
           <a class="profile-link" href="https://hackerone.com/skydesperados" target="_blank" rel="noopener noreferrer me">HackerOne</a>
         </div>
@@ -1006,8 +1002,7 @@ Content-Type: text/plain;charset=UTF-8
   <footer>
     <div class="footer-inner wrap">
       <div>
-        <p class="footer-author"><a href="https://x.com/skydesperados" target="_blank" rel="noopener noreferrer me">@skydesperados</a></p>
-        <p class="footer-profiles"><a href="https://github.com/skydesperados" target="_blank" rel="noopener noreferrer me">GitHub</a><a href="https://hackerone.com/skydesperados" target="_blank" rel="noopener noreferrer me">HackerOne</a></p>
+        <p class="footer-profiles"><a href="https://x.com/skydesperados" target="_blank" rel="noopener noreferrer me">X</a><a href="https://github.com/skydesperados" target="_blank" rel="noopener noreferrer me">GitHub</a><a href="https://hackerone.com/skydesperados" target="_blank" rel="noopener noreferrer me">HackerOne</a></p>
         <p class="fine">Three companies. One shared root cause. Targets are masked; action IDs and recorded counts are retained from the original writeup.</p>
       </div>
       <a class="back-top" href="#top">Back to top</a>
