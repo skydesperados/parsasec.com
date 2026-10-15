@@ -3,18 +3,35 @@
 The public site at [parsasec.com](https://parsasec.com), by
 [@skydesperados](https://github.com/skydesperados).
 
-The site currently publishes **Next.js Server Actions: Broken Access Control**.
-It is plain HTML, CSS, and JavaScript, with no build step or external dependencies.
+The home page lists writeups. Each title opens the full article on its own page.
+The site uses plain HTML, CSS, and JavaScript, with no build step or external
+dependencies.
+
+- Home: index.html
+- Article: writeups/nextjs-server-actions/index.html
+- Article URL: https://parsasec.com/writeups/nextjs-server-actions/
+
 Bug 1 includes a theme-aware video player and an animated attacker-flow diagram.
 The video, poster, and original GIF live in assets/. The original GIF is also
 embedded in the HTML as a fallback.
 
 ## Publish changes
 
-Edit index.html and any changed assets, review the page in a browser, then commit
-and push to main.
+Edit the home page, article, or assets, review the pages in a browser, then commit
+and push to main. Old home-page section links redirect to the article.
 GitHub Pages publishes from the repository root. The .nojekyll file disables
 Jekyll processing, and CNAME declares the custom domain.
+
+## Add a writeup
+
+1. Create writeups/your-slug/index.html.
+2. Add a list item to the writeup-list in the home page:
+
+   ```html
+   <li><a href="writeups/your-slug/">Your writeup title</a></li>
+   ```
+
+3. Add its public URL to sitemap.xml, then commit and push.
 
 Only public site files belong in this repository. Keep research workspaces,
 credentials, private evidence, and local backups outside it.
