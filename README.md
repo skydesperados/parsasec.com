@@ -3,7 +3,7 @@
 The public site at [parsasec.com](https://parsasec.com), by
 [@skydesperados](https://github.com/skydesperados).
 
-The site currently publishes **One Missing Check: $15K+ from Next.js Server Actions**.
+The site currently publishes **Next.js Server Actions: Broken Access Control**.
 It is plain HTML, CSS, and JavaScript, with no build step or external dependencies.
 Bug 1 includes a theme-aware video player and an animated attacker-flow diagram.
 The video, poster, and original GIF live in assets/. The original GIF is also
