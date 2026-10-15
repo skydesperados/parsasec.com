@@ -5,11 +5,14 @@ The public site at [parsasec.com](https://parsasec.com), by
 
 The site currently publishes **One Missing Check: $15K+ from Next.js Server Actions**.
 It is plain HTML, CSS, and JavaScript, with no build step or external dependencies.
-The recording is embedded in the HTML.
+Bug 1 includes a theme-aware video player and an animated attacker-flow diagram.
+The video, poster, and original GIF live in assets/. The original GIF is also
+embedded in the HTML as a fallback.
 
 ## Publish changes
 
-Edit index.html, review the page in a browser, then commit and push to main.
+Edit index.html and any changed assets, review the page in a browser, then commit
+and push to main.
 GitHub Pages publishes from the repository root. The .nojekyll file disables
 Jekyll processing, and CNAME declares the custom domain.
 
