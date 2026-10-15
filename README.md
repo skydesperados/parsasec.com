@@ -23,5 +23,7 @@ credentials, private evidence, and local backups outside it.
 - A records at @: 185.199.108.153, 185.199.109.153,
   185.199.110.153, and 185.199.111.153
 - www CNAME: skydesperados.github.io
+- Domain ownership is verified for skydesperados on GitHub. Keep the
+  _github-pages-challenge-skydesperados TXT record in DNS to retain verification.
 
 See [GitHub's custom domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
